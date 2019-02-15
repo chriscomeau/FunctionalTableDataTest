@@ -1,0 +1,56 @@
+# FunctionalTableDataTest
+
+
+**🚨 The app is currently in development. 🚨**
+
+##Building and Running
+
+
+**In the Terminal:**
+
+
+* You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+        $ brew update
+        $ brew install carthage
+      
+
+* Update frameworks with Carthage 
+         
+        $ carthage update
+
+
+* Open `FunctionalTableDataTest.xcodeproj` in Xcode.
+
+
+## Features
+
+- [x] Swift 4.2
+- [x] Carthage dependency manager
+
+## Frameworks
+
+- [Shopify/FunctionalTableData](https://github.com/Shopify/FunctionalTableData)
+- [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
+
+
+ 
+## Requirements
+
+- iOS 11.0+ 
+- Xcode 10.1+
+- Swift 4.2+
+
+
+## Changelog
+
+
+
+
+
+## Contact
+
+* Chris Comeau
+* iOS Developer, Montreal, Canada
+* chris.comeau@skyriser.com
+* [http://chriscomeau.com/](//)
