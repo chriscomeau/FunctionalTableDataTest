@@ -5,7 +5,8 @@
 
 Test project for trying out [Shopify/FunctionalTableData](https://github.com/Shopify/FunctionalTableData).
 
-#Building and Running
+
+# Building and Running
 
 
 **In the Terminal:**
