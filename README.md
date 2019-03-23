@@ -3,7 +3,9 @@
 
 **🚨 The app is currently in development. 🚨**
 
-##Building and Running
+Test project for trying out [Shopify/FunctionalTableData](https://github.com/Shopify/FunctionalTableData).
+
+#Building and Running
 
 
 **In the Terminal:**
