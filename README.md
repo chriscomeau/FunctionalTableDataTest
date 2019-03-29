@@ -56,4 +56,4 @@ Test project for trying out [Shopify/FunctionalTableData](https://github.com/Sho
 * Chris Comeau
 * iOS Developer, Montreal, Canada
 * chris.comeau@skyriser.com
-* [http://chriscomeau.com/](//)
+* [http://chriscomeau.com/](http://chriscomeau.com/)
