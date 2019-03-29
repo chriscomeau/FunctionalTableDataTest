@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83BA6DC2224E932F004B213C /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BA6DC1224E932F004B213C /* CustomColor.swift */; };
+		83BA6DC7224E935F004B213C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 83BA6DC6224E935E004B213C /* README.md */; };
 		83D7447322173EEB00B03515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7447222173EEB00B03515 /* AppDelegate.swift */; };
 		83D7447522173EEB00B03515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7447422173EEB00B03515 /* ViewController.swift */; };
-		83D7447822173EEB00B03515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7447622173EEB00B03515 /* Main.storyboard */; };
 		83D7447A22173EF100B03515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D7447922173EF100B03515 /* Assets.xcassets */; };
 		83D7447D22173EF100B03515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7447B22173EF100B03515 /* LaunchScreen.storyboard */; };
 		83D7448822173EF100B03515 /* FunctionalTableDataTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7448722173EF100B03515 /* FunctionalTableDataTestTests.swift */; };
@@ -36,10 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83BA6DC1224E932F004B213C /* CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		83BA6DC6224E935E004B213C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83D7446F22173EEA00B03515 /* FunctionalTableDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionalTableDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7447222173EEB00B03515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D7447422173EEB00B03515 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83D7447722173EEB00B03515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83D7447922173EF100B03515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D7447C22173EF100B03515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D7447E22173EF100B03515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,9 +83,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83BA6DC3224E933E004B213C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				83D7447222173EEB00B03515 /* AppDelegate.swift */,
+				83D7447422173EEB00B03515 /* ViewController.swift */,
+				83BA6DC4224E9347004B213C /* Extensions */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		83BA6DC4224E9347004B213C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83BA6DC1224E932F004B213C /* CustomColor.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		83BA6DC5224E9350004B213C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83D7447922173EF100B03515 /* Assets.xcassets */,
+				83D7447B22173EF100B03515 /* LaunchScreen.storyboard */,
+				83D7447E22173EF100B03515 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		83D7446622173EEA00B03515 = {
 			isa = PBXGroup;
 			children = (
+				83BA6DC6224E935E004B213C /* README.md */,
 				83D7447122173EEB00B03515 /* FunctionalTableDataTest */,
 				83D744A022174A6200B03515 /* Carthage */,
 				83D7448622173EF100B03515 /* FunctionalTableDataTestTests */,
@@ -105,12 +136,8 @@
 		83D7447122173EEB00B03515 /* FunctionalTableDataTest */ = {
 			isa = PBXGroup;
 			children = (
-				83D7447222173EEB00B03515 /* AppDelegate.swift */,
-				83D7447422173EEB00B03515 /* ViewController.swift */,
-				83D7447622173EEB00B03515 /* Main.storyboard */,
-				83D7447922173EF100B03515 /* Assets.xcassets */,
-				83D7447B22173EF100B03515 /* LaunchScreen.storyboard */,
-				83D7447E22173EF100B03515 /* Info.plist */,
+				83BA6DC3224E933E004B213C /* Sources */,
+				83BA6DC5224E9350004B213C /* Resources */,
 			);
 			path = FunctionalTableDataTest;
 			sourceTree = "<group>";
@@ -251,7 +278,7 @@
 			files = (
 				83D7447D22173EF100B03515 /* LaunchScreen.storyboard in Resources */,
 				83D7447A22173EF100B03515 /* Assets.xcassets in Resources */,
-				83D7447822173EEB00B03515 /* Main.storyboard in Resources */,
+				83BA6DC7224E935F004B213C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +328,7 @@
 			files = (
 				83D7447522173EEB00B03515 /* ViewController.swift in Sources */,
 				83D7447322173EEB00B03515 /* AppDelegate.swift in Sources */,
+				83BA6DC2224E932F004B213C /* CustomColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,14 +364,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		83D7447622173EEB00B03515 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83D7447722173EEB00B03515 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83D7447B22173EF100B03515 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -489,8 +509,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyriser.FunctionalTableDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -512,8 +532,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyriser.FunctionalTableDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

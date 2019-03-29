@@ -40,12 +40,9 @@ Test project for trying out [Shopify/FunctionalTableData](https://github.com/Sho
  
 ## Requirements
 
-- iOS 11.0+ 
-- Xcode 10.1+
-- Swift 4.2+
-
-
-## Changelog
+- iOS 12.0+ 
+- Xcode 10.2+
+- Swift 5.0+
 
 
 
