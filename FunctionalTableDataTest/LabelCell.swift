@@ -1,3 +1,10 @@
+//
+//  LabelCell.swift
+//  FunctionalTableDataTest
+//
+//  Created by Chris Comeau on 2019-03-30.
+//  Copyright © 2019 Skyriser Media. All rights reserved.
+//
 import UIKit
 import FunctionalTableData
 

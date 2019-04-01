@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
 import FunctionalTableData
 
 class ViewController: UIViewController {

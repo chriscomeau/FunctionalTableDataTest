@@ -32,8 +32,6 @@ Test project for trying out [Shopify/FunctionalTableData](https://github.com/Sho
 ## Frameworks
 
 - [Shopify/FunctionalTableData](https://github.com/Shopify/FunctionalTableData)
-- [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
-
 
  
 ## Requirements
