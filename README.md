@@ -1,8 +1,6 @@
 # FunctionalTableDataTest
 
 
-**🚨 The app is currently in development. 🚨**
-
 Test project for trying out [Shopify/FunctionalTableData](https://github.com/Shopify/FunctionalTableData).
 
 
