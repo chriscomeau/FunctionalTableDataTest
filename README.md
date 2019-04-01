@@ -45,7 +45,9 @@ Test project for trying out [Shopify/FunctionalTableData](https://github.com/Sho
 - Swift 5.0+
 
 
+## Screenshots
 
+![screenshot 1](https://github.com/chriscomeau/FunctionalTableDataTest/blob/master/screenshots/screenshot1.png)
 
 
 ## Contact
