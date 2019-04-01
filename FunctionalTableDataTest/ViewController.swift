@@ -11,10 +11,15 @@ import SVProgressHUD
 import FunctionalTableData
 
 class ViewController: UIViewController {
-  
+
+  private let functionalData = FunctionalTableData()
+  private var items: [String] = [] {
+    didSet {
+      render()
+    }
+  }
   private var tableView: UITableView!
   private let cellId = "Cell"
-  private var rows: [String]?
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,8 +28,6 @@ class ViewController: UIViewController {
     navigationController?.navigationBar.tintColor = UIColor.appTintColor
     
     title = "FunctionalTableDataTest"
-    
-    rows = ["Cell 1", "Cell 2"]
     
     //setup view
     view.backgroundColor = UIColor.white
@@ -38,9 +41,13 @@ class ViewController: UIViewController {
     tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     view.addSubview(tableView)
     
-    tableView.dataSource = self
+    //tableView.dataSource = self
     tableView.delegate = self
     
+    //tabledata
+    functionalData.tableView = tableView
+    items = ["Cell 1", "Cell 2"]
+
     //autolayout
     tableView.translatesAutoresizingMaskIntoConstraints = false
     NSLayoutConstraint.activate([
@@ -54,7 +61,7 @@ class ViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
-    reloadData()
+    //reloadData()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -66,14 +73,12 @@ class ViewController: UIViewController {
 extension ViewController {
   
   @objc func actionNew(sender: UIBarButtonItem) {
-    print("actionNew")
-    
     //add
-    let count = rows?.count ?? 0
-    rows?.append("Cell \(count + 1)")
+    let count = items.count
+    items.append("Cell \(count + 1)")
     
     //reload
-    tableView.reloadData()
+    //reloadData()
     
     //vibrate
     //Utils.haptic1()
@@ -95,9 +100,10 @@ extension ViewController {
      reload()
      */
   }
-  func reloadData() {
+  
+  /*func reloadData() {
     self.tableView.reloadData()
-  }
+  }*/
 }
 
 extension ViewController: UITableViewDelegate {
@@ -116,10 +122,11 @@ extension ViewController: UIScrollViewDelegate {
   }
 }
 
+/*
 extension ViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return rows?.count ?? 0
+    return items.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -135,14 +142,44 @@ extension ViewController: UITableViewDataSource {
     //cell.detailTextLabel?.textColor = UIColor.subtitleColor
     
     
-    if let row = rows?[indexPath.row] {
+    let row = items[indexPath.row]
       
-      cell.textLabel?.text = row
-      
-      //cell.detailTextLabel?.text = "-"
-    }
+    cell.textLabel?.text = row
+    
+    //cell.detailTextLabel?.text = "-"
+  
     
     return cell
   }
   
+}
+*/
+
+extension ViewController {
+  
+  private func render() {
+    print("*** render")
+
+    let rows: [CellConfigType] = items.enumerated().map { index, item in
+      return LabelCell(
+        key: "id-\(index)",
+        style: CellStyle(backgroundColor: .white),
+        actions: CellActions(
+          selectionAction: { _ in
+            print("\(item) selected")
+            return .selected
+        },
+          deselectionAction: { _ in
+            print("\(item) deselected")
+            return .deselected
+        }),
+        state: LabelState(text: item),
+        cellUpdater: LabelState.updateView)
+    }
+    
+    functionalData.renderAndDiff([
+      TableSection(key: "section", rows: rows)
+      ])
+  }
+
 }

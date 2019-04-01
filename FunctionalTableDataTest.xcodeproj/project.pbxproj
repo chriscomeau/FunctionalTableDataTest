@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		83BA6DC2224E932F004B213C /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BA6DC1224E932F004B213C /* CustomColor.swift */; };
 		83BA6DC7224E935F004B213C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 83BA6DC6224E935E004B213C /* README.md */; };
+		83BA6DC9225259B5004B213C /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BA6DC8225259B4004B213C /* LabelCell.swift */; };
 		83D7447322173EEB00B03515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7447222173EEB00B03515 /* AppDelegate.swift */; };
 		83D7447522173EEB00B03515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7447422173EEB00B03515 /* ViewController.swift */; };
 		83D7447A22173EF100B03515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D7447922173EF100B03515 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		83BA6DC1224E932F004B213C /* CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		83BA6DC6224E935E004B213C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		83BA6DC8225259B4004B213C /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		83D7446F22173EEA00B03515 /* FunctionalTableDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionalTableDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7447222173EEB00B03515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D7447422173EEB00B03515 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				83D7447222173EEB00B03515 /* AppDelegate.swift */,
 				83D7447422173EEB00B03515 /* ViewController.swift */,
+				83BA6DC8225259B4004B213C /* LabelCell.swift */,
 				83BA6DC4224E9347004B213C /* Extensions */,
 			);
 			name = Sources;
@@ -328,6 +331,7 @@
 			files = (
 				83D7447522173EEB00B03515 /* ViewController.swift in Sources */,
 				83D7447322173EEB00B03515 /* AppDelegate.swift in Sources */,
+				83BA6DC9225259B5004B213C /* LabelCell.swift in Sources */,
 				83BA6DC2224E932F004B213C /* CustomColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

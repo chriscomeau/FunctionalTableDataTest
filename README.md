@@ -28,7 +28,7 @@ Test project for trying out [Shopify/FunctionalTableData](https://github.com/Sho
 
 ## Features
 
-- [x] Swift 4.2
+- [x] Swift 5.0
 - [x] Carthage dependency manager
 
 ## Frameworks
