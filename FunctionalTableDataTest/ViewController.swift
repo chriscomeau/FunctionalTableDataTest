@@ -40,11 +40,10 @@ class ViewController: UIViewController {
     tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     view.addSubview(tableView)
     
-    //tableView.dataSource = self
-    tableView.delegate = self
-    
     //tabledata
     functionalData.tableView = tableView
+    
+    //test data
     items = ["Cell 1", "Cell 2"]
 
     //autolayout
@@ -56,17 +55,6 @@ class ViewController: UIViewController {
       tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
       ])
   }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    
-    //reloadData()
-  }
-  
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    
-  }
 }
 
 extension ViewController {
@@ -75,84 +63,8 @@ extension ViewController {
     //add
     let count = items.count
     items.append("Cell \(count + 1)")
-    
-    //reload
-    //reloadData()
-    
-    //vibrate
-    //Utils.haptic1()
-    
-    
-    /*
-     let dateFormatter : DateFormatter = DateFormatter()
-     //dateFormatter.dateFormat = "yyyy-MMM-dd HH:mm:ss"
-     dateFormatter.dateFormat = "HH:mm:ss"
-     let date = Date()
-     let dateString = dateFormatter.string(from: date)
-     
-     let item = ToDoItem()
-     item.title = "test (\(dateString))"
-     appDelegate!.data.insert(item, at: 0)
-     
-     appDelegate!.savePrefs()
-     
-     reload()
-     */
-  }
-  
-  /*func reloadData() {
-    self.tableView.reloadData()
-  }*/
-}
-
-extension ViewController: UITableViewDelegate {
-  
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
   }
 }
-
-extension ViewController: UIScrollViewDelegate {
-  
-  func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-    //vibrate
-    //Haptics.hapticScroll()
-    
-  }
-}
-
-/*
-extension ViewController: UITableViewDataSource {
-  
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return items.count
-  }
-  
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell: UITableViewCell = {
-      guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId) else {
-        return UITableViewCell(style: .subtitle, reuseIdentifier: cellId)
-      }
-      return cell
-    }()
-    
-    cell.textLabel?.text = ""
-    cell.detailTextLabel?.text = ""
-    //cell.detailTextLabel?.textColor = UIColor.subtitleColor
-    
-    
-    let row = items[indexPath.row]
-      
-    cell.textLabel?.text = row
-    
-    //cell.detailTextLabel?.text = "-"
-  
-    
-    return cell
-  }
-  
-}
-*/
 
 extension ViewController {
   
@@ -162,7 +74,7 @@ extension ViewController {
     let rows: [CellConfigType] = items.enumerated().map { index, item in
       return LabelCell(
         key: "id-\(index)",
-        style: CellStyle(backgroundColor: .white),
+        style: CellStyle(backgroundColor: .clear),
         actions: CellActions(
           selectionAction: { _ in
             print("\(item) selected")
@@ -176,9 +88,8 @@ extension ViewController {
         cellUpdater: LabelState.updateView)
     }
     
-    functionalData.renderAndDiff([
-      TableSection(key: "section", rows: rows)
-      ])
-  }
+    let section = TableSection(key: "section", rows: rows)
 
+    functionalData.renderAndDiff([section])
+  }
 }
