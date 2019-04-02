@@ -10,8 +10,6 @@ import Foundation
 import UIKit
 
 public extension UIColor {
-  //static let appTintColor = UIColor.green
-  //static let appTintColor = UIColor(rgb: 0x95C145) //Shopify bright green
   static let appTintColor = UIColor(rgb: 0x608F3C) //Shopify dark green
   
   static let subtitleColor = UIColor.darkGray
