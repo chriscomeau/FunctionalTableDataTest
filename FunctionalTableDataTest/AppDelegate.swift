@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window!.makeKeyAndVisible()
     
     //tint
-    //UINavigationBar.appearance().barTintColor = UIColor.appTintColor
     UINavigationBar.appearance().tintColor = UIColor.appTintColor
     UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.appTintColor]
     
