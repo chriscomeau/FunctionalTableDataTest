@@ -16,7 +16,6 @@
 		83D7447D22173EF100B03515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7447B22173EF100B03515 /* LaunchScreen.storyboard */; };
 		83D7448822173EF100B03515 /* FunctionalTableDataTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7448722173EF100B03515 /* FunctionalTableDataTestTests.swift */; };
 		83D7449322173EF100B03515 /* FunctionalTableDataTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7449222173EF100B03515 /* FunctionalTableDataTestUITests.swift */; };
-		83D744A522174C4800B03515 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D744A322174C4700B03515 /* SVProgressHUD.framework */; };
 		83D744A622174C4800B03515 /* FunctionalTableData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D744A422174C4800B03515 /* FunctionalTableData.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		83D7449222173EF100B03515 /* FunctionalTableDataTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalTableDataTestUITests.swift; sourceTree = "<group>"; };
 		83D7449422173EF100B03515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D744A122174A7500B03515 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
-		83D744A322174C4700B03515 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = SOURCE_ROOT; };
 		83D744A422174C4800B03515 /* FunctionalTableData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FunctionalTableData.framework; path = Carthage/Build/iOS/FunctionalTableData.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D744A622174C4800B03515 /* FunctionalTableData.framework in Frameworks */,
-				83D744A522174C4800B03515 /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +165,6 @@
 			children = (
 				83D744A122174A7500B03515 /* Cartfile */,
 				83D744A422174C4800B03515 /* FunctionalTableData.framework */,
-				83D744A322174C4700B03515 /* SVProgressHUD.framework */,
 			);
 			name = Carthage;
 			path = FunctionalTableDataTest;
@@ -311,7 +307,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/FunctionalTableData.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			name = "Run Script (Carthage)";
 			outputFileListPaths = (
