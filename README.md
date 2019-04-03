@@ -1,9 +1,10 @@
+[![Build Status](https://travis-ci.org/chriscomeau/FunctionalTableDataTest.svg?branch=master)](https://travis-ci.org/chriscomeau/FunctionalTableDataTest)
+
 # FunctionalTableDataTest
 
 
 Test project for trying out [Shopify/FunctionalTableData](https://github.com/Shopify/FunctionalTableData).
 
-[![Build Status](https://travis-ci.org/chriscomeau/FunctionalTableDataTest.svg?branch=master)](https://travis-ci.org/chriscomeau/FunctionalTableDataTest)
 
 
 # Building and Running
