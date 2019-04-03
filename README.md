@@ -30,7 +30,7 @@ Test project for trying out [Shopify/FunctionalTableData](https://github.com/Sho
 
 - [x] Swift 5.0
 - [x] Carthage dependency manager
-- [ ] [Travis CI](https://travis-ci.org)
+- [x] [Travis CI](https://travis-ci.org), with Carthage caching
 
 ## Frameworks
 
