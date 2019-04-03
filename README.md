@@ -3,6 +3,8 @@
 
 Test project for trying out [Shopify/FunctionalTableData](https://github.com/Shopify/FunctionalTableData).
 
+[![Build Status](https://travis-ci.org/chriscomeau/FunctionalTableDataTest.svg?branch=master)](https://travis-ci.org/chriscomeau/FunctionalTableDataTest)
+
 
 # Building and Running
 
@@ -28,6 +30,7 @@ Test project for trying out [Shopify/FunctionalTableData](https://github.com/Sho
 
 - [x] Swift 5.0
 - [x] Carthage dependency manager
+- [ ] [Travis CI](https://travis-ci.org)
 
 ## Frameworks
 
