@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/chriscomeau/FunctionalTableDataTest.svg?branch=master)](https://travis-ci.org/chriscomeau/FunctionalTableDataTest)
+[![Build Status](https://travis-ci.org/chriscomeau/FunctionalTableDataTest.svg?branch=master)](https://travis-ci.org/chriscomeau/FunctionalTableDataTest)  ![](https://img.shields.io/badge/language-Swift%205.0-green.svg) [![Twitter](https://img.shields.io/badge/twitter-@chriscomeau-blue.svg)](http://twitter.com/chriscomeau)
 
 # FunctionalTableDataTest
 
