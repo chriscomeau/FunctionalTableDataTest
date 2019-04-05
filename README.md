@@ -2,6 +2,7 @@
 
 # FunctionalTableDataTest
 
+![shopify logo](https://github.com/chriscomeau/ShopifyiOSCollections/blob/master/images/shopify-logo.png)
 
 Test project for trying out [Shopify/FunctionalTableData](https://github.com/Shopify/FunctionalTableData).
 
