@@ -78,6 +78,11 @@ extension ViewController {
         actions: CellActions(
           selectionAction: { _ in
             print("\(item) selected")
+            
+            // push another ViewController
+            let viewController = ViewController()
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
             return .selected
         },
           deselectionAction: { _ in
