@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/chriscomeau/FunctionalTableDataTest.svg?branch=master)](https://travis-ci.org/chriscomeau/FunctionalTableDataTest)  ![](https://img.shields.io/badge/language-Swift%205.0-green.svg) [![Twitter](https://img.shields.io/badge/twitter-@chriscomeau-blue.svg)](http://twitter.com/chriscomeau)
+[![Build Status](https://travis-ci.org/chriscomeau/FunctionalTableDataTest.svg?branch=master)](https://travis-ci.org/chriscomeau/FunctionalTableDataTest)  ![](https://img.shields.io/badge/language-Swift%205.0-green.svg) [![iOS](https://img.shields.io/badge/platform-iOS-lightgray.svg?style=flat)](https://developer.apple.com/) [![Twitter](https://img.shields.io/badge/twitter-@chriscomeau-blue.svg)](http://twitter.com/chriscomeau)
 
 # FunctionalTableDataTest
 
@@ -51,7 +51,7 @@ Test project for trying out [Shopify/FunctionalTableData](https://github.com/Sho
 ![screenshot 1](https://github.com/chriscomeau/FunctionalTableDataTest/blob/master/screenshots/screenshot1.png)
 
 
-## Contact
+## Author
 
 * Chris Comeau
 * iOS Developer, Montreal, Canada
